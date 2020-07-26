@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Internal CSS styling begins here-->
+        <style>
+            /*Body styling*/
+            body{
+                background-color: white;
+            }
+
+            /*Styling for class "name"*/
+            .names {
+                border-radius: 5px;
+                background-color:gainsboro;
+                padding: 20px;
+            }
+
+            /*This styles the tags with ids "country", "fname" and "lname"*/
+            #country, #fname, #lname{
+                margin: 8px 0;
+                padding: 12px 20px;
+                display: inline-block;
+                box-sizing: border-box;
+                border: 1.5px solid rgb(235, 235, 235);
+                border-radius: 5px;
+                width: 100%;
+            }
+
+            /*Styles the input tag of type "submit"*/
+            input[type=submit]{
+                margin: 7px 0;
+                padding: 13px 21px;
+                border: none;
+                border-radius: 4px;
+                background-color:rgb(4, 170, 4);
+                color: white;
+                cursor: pointer;
+                width: 10%;
+            }
+
+            /*This styles the submit button*/
+            input[type=submit]:hover{
+                background-color: rgb(50, 248, 155);
+            }
+
+            /*Styles the tag with id "subject", textarea*/
+            #subject {
+                padding: 13px 20px;
+                box-sizing: border-box;
+                border: 3px solid rgb(211, 210, 210);
+                border-radius: 5px;
+                background-color: white;
+                font-size: 16px;
+                width: 100%;
+                height: 200px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+        </style> <!--This is the end of the internal CSS styling-->
+    </head>
+    <!--The body of the code-->
+    <body>
+
+    <!--Beginning of div-->
+    <div class="names">
+        <!--Bar and label for first and last name-->
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Your name.."><br>
+        <lable for="lname">Last name</lable><br>
+        <input type="text" id="lname" name="lname" placeholder="Your last name.."><br>
+        
+        <!--Label for country-->
+        <label for="country">Country</label><br>
+        <!--Countries Bar and list of countries-->
+        <select type="text" id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="ghana">Ghana</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="sa">SA</option>
+            <option value="congo">Congo</option>
+        </select>
+        
+        <!--Label and Textarea for Subject-->
+        <label for="subject">Subject:</label><br>
+        <textarea type="text" id="subject" name="subject" placeholder="Write something.."></textarea><br>
+        
+        <input type="submit" id="sub" value="submit"><br>
+    </div><!--End of div-->
+     
+    </body><!--Body ends here-->
+</html><!--End of code-->
